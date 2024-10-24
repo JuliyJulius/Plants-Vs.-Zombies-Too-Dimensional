@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://dgtows4gepuap"]
+
+[ext_resource type="Script" path="res://Scripts/Main.cs" id="1_djbhd"]
+[ext_resource type="Texture2D" uid="uid://be2tgpo1qx0yk" path="res://Assets/test_lawn.png" id="2_ekph5"]
+[ext_resource type="Script" path="res://Scripts/Lawn.cs" id="3_rt8qw"]
+[ext_resource type="Texture2D" uid="uid://brie5qu573sk0" path="res://Assets/tile_select.png" id="4_gy16w"]
+[ext_resource type="Script" path="res://Scripts/Selector.cs" id="5_rgym7"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_djbhd")
+
+[node name="Lawn" type="Sprite2D" parent="."]
+texture = ExtResource("2_ekph5")
+script = ExtResource("3_rt8qw")
+
+[node name="Selector" type="Sprite2D" parent="."]
+texture = ExtResource("4_gy16w")
+script = ExtResource("5_rgym7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
