@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://cluc61yrxfrgw"]
+
+[ext_resource type="Texture2D" uid="uid://brie5qu573sk0" path="res://Assets/tile_select.png" id="1_rn2ln"]
+[ext_resource type="Script" path="res://Scripts/Selector.cs" id="2_af42c"]
+[ext_resource type="Texture2D" uid="uid://be2tgpo1qx0yk" path="res://Assets/test_lawn.png" id="3_hyuqc"]
+[ext_resource type="Script" path="res://Scripts/Lawn.cs" id="4_ydlof"]
+
+[node name="Lawn" type="Node2D"]
+
+[node name="Lawn" type="Sprite2D" parent="."]
+position = Vector2(349, 164)
+texture = ExtResource("3_hyuqc")
+centered = false
+script = ExtResource("4_ydlof")
+
+[node name="Selector" type="Sprite2D" parent="."]
+texture = ExtResource("1_rn2ln")
+script = ExtResource("2_af42c")
