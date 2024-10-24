@@ -2,3 +2,6 @@
 .godot/
 .vs/
 /android/
+
+# Visual Studio Code
+**/.vscode/
